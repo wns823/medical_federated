@@ -1,0 +1,17 @@
+,learning rate,mu,feddyn_alpha,server learning rate,tau
+LayerNormalization-Fedavg,0.001,,,,
+LayerNormalization-Fedprox,0.001,0.01,,,
+LayerNormalization-Fedbn,0.001,,,,
+LayerNormalization-Fedadam,0.001,,,0.01,0.0001
+LayerNormalization-Fedadagrad,0.001,,,0.1,0.0001
+LayerNormalization-Fedyogi,0.001,,,0.01,0.0001
+LayerNormalization-Feddyn,0.001,,0.0001,,
+LayerNormalization-Fedpxn,0.001,0.01,,,
+GroupNormalization-Fedavg,0.001,,,,
+GroupNormalization-Fedprox,0.001,0.01,,,
+GroupNormalization-Fedbn,0.001,,,,
+GroupNormalization-Fedadam,0.001,,,0.001,0.0001
+GroupNormalization-Fedadagrad,0.0001,,,0.1,0.0001
+GroupNormalization-Fedyogi,0.001,,,0.003,0.0001
+GroupNormalization-Feddyn,0.001,,0.0001,,
+GroupNormalization-Fedpxn,0.001,0.01,,,

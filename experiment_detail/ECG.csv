@@ -1,0 +1,11 @@
+,learning rate,mu,feddyn_alpha,server learning rate,tau
+BatchNormalization-Fedavg,0.01,,,,
+BatchNormalization-Fedprox,0.01,0.001,,,
+BatchNormalization-Fedbn,0.01,,,,
+BatchNormalization-Fedadam,0.01,,,0.01,0.01
+BatchNormalization-Fedpxn,0.01,0.001,,,
+GroupNormalization-Fedavg,0.01,,,,
+GroupNormalization-Fedprox,0.1,0.0001,,,
+GroupNormalization-Fedbn,0.01,,,,
+GroupNormalization-Fedadam,0.003,,,0.003,0.001
+GroupNormalization-Fedpxn,0.1,0.0001,,,

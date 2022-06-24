@@ -1,0 +1,2 @@
+fairseq-signals==1.0.0a0
+torch-ecg==0.0.15

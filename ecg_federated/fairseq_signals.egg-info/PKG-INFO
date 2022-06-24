@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: fairseq-signals
+Version: 1.0.0a0+45151ab
+Summary: Facebook AI Research Sequence-to-Sequence Toolkit modifed for ecg signals
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Federated learning (FL) with ECG data
+
+For easy ECG data processing, the code of FL with ECG data is based on the [Fairseq-signals](https://github.com/Jwoo5/fairseq-signals)
+
+# Requirements and Installation
+* [PyTorch](https://pytorch.org) version >= 1.5.0
+* Python version >= 3.6
+* For training new models, you'll also need an NIVDIA GPU and [NCCL](https://github.com/NVIDIA/nccl)
+* **To install fairseq-signals** from source and develop locally:
+
+```bash
+conda create -n ecg_federated python=3.8 (optional)
+pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
+pip install --editable ./
+pip install torch-ecg==0.0.15
+pip install easydict
+pip install wandb
+```
+
+* **To preprocess ECG datasets**: `pip install scipy==1.3.1`
+* **To build cython components**: `python setup.py build_ext --inplace`
+* **For large datasets** install [PyArrow](https://arrow.apache.org/docs/python/install.html#using-pip): `pip install pyarrow`
+
+# Getting Started
+## Prepare ECG dataset
+We provide pre-processing codes for various ECG datasets.
+
+* [PhysioNet2021](https://moody-challenge.physionet.org/2021/)
+
+### Pre-process
+Given a directory that contains WFDB directories to be pre-processed for **PhysioNet2021**:
+
+```shell script
+$ python fairseq_signals/data/ecg/preprocess/preprocess_physionet2021.py \
+    /path/to/physionet2021/ \
+    --dest /path/to/output \
+    --workers $N
+```
+
+### Prepare data manifest
+Given a directory that contains pre-processed data:
+```shell script
+$ python fairseq_signals/data/ecg/preprocess/manifest.py \
+    /path/to/data/ \
+    --dest /path/to/manifest \
+    --valid-percent $valid
+```
+
+You can find more detailed README about pre-processing and data manifest [here](fairseq_signals/data/ecg/preprocess/README.md).
