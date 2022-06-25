@@ -23,7 +23,7 @@ We utilized the grid search map used in the existing papers(FedProx, FedOpt, Fed
 - server learning rate ($\eta_{g}$) := [0.1, 0.03, 0.01, 0.003, 0.001, 0.0001]
 - tau ($\gamma$) := [0.0001, 0.001, 0.01, 0.1]
 
-For the grid search, we used 10% of total data in skin cancer & ECG and the data of 5 largest clients in eICU. You can check the used hyperparameters in below links.
+For the grid search, we used 10% of total data in skin cancer & ECG and the data of 5 largest clients in eICU. You can check the used hyperparameters in the links below.
 - Mortality prediction ([mort_24h](eICU_mort_24h.csv), [mort_48h](eICU_mort_48h.csv))
 - Length of Stay prediction ([LOS](eICU_LOS.csv))
 - Imminent discharge prediction ([disch_24h](eICU_disch_24h.csv), [disch_48h](eICU_disch_48h.csv))
