@@ -2,10 +2,14 @@
 
 This repository is official implementation of "Toward the Practical Understanding of Federated Learning in the Medical Domain." Federated learning (FL) is an active area of research. One of the most suitable areas for adopting FL is the medical domain, where patient privacy must be respected. we propose empirical benchmarks of FL methods with three real-world datasets: electronic health records, skin cancer images, and electrocardiogram datasets.
 
+  
+
 ## Federated learning with eICU database
 We evaluate FL methods on the [eICU database](https://www.nature.com/articles/sdata2018178). The database is a multi-center intensive care unit (ICU)database with high granularity data for over 200,000 admissions to ICUs monitored by eICU Programs across the United States. We implement six clinical prediction tasks from the eICU database. 
 
 You can see the details of FL with eICU [here](ehr_federated/README.md).
+
+
 
 ## Federated learning with skin cancer images
 We evaluate FL methods on skin cancer image datasets originating from different sources. We implement skin cancer image classification. 
@@ -24,5 +28,5 @@ We have attached all details of the experiments in the [experiment_detail](exper
 We attach the PRAUC results of FL methods with the eICU in the [experiment_results](experiment_results/README.md). 
 
 # Contact
-If you have any questions or recommendations, please contact us via an issue or an e-mail.
+If you have any question or recommendation, please contact us via an issue or an e-mail.
 * seongjunyang@kaist.ac.kr
