@@ -39,7 +39,7 @@ $ mkdir [your specific path]/data_storage && cd [your specific path]/data_storag
 
 3. Run the following script to pre-process and cache the dataset.
 ```bash
-$ python ehr_federated/preprocess.py --data_path [data_storage_path]
+python ehr_federated/preprocess.py --data_path [data_storage_path]
 ```
 
 ## Train
