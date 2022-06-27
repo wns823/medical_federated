@@ -1,6 +1,6 @@
-# Toward the Practical Understanding of Federated Learning in the Medical Domain
+# Towards the Practical Utility of Federated Learning in the Medical Domain
 
-This repository is official implementation of "Toward the Practical Understanding of Federated Learning in the Medical Domain." Federated learning (FL) is an active area of research. One of the most suitable areas for adopting FL is the medical domain, where patient privacy must be respected. we propose empirical benchmarks of FL methods with three real-world datasets: electronic health records, skin cancer images, and electrocardiogram datasets.
+This repository is official implementation of "Towards the Practical Utility of Federated Learning in the Medical Domain". Federated learning (FL) is an active area of research. One of the most suitable areas for adopting FL is the medical domain, where patient privacy must be respected. we propose empirical benchmarks of FL methods with three real-world datasets: electronic health records, skin cancer images, and electrocardiogram datasets.
 
   
 
