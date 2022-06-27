@@ -9,13 +9,13 @@ For easy ECG data processing, the code of FL with ECG data is based on the [Fair
 * **To install fairseq-signals** from source and develop locally:
 
 ```bash
-conda create -n ecg_federated python=3.8 (optional)
-pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
-pip install --editable ./
-pip install torch-ecg==0.0.15
-pip install easydict
-pip install wandb
-python setup.py build_ext --inplace
+$ conda create -n ecg_federated python=3.8 (optional)
+$ pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
+$ pip install --editable ./
+$ pip install torch-ecg==0.0.15
+$ pip install easydict
+$ pip install wandb
+$ python setup.py build_ext --inplace
 ```
 
 ## Prepare ECG dataset
@@ -56,7 +56,7 @@ python main.py --communications 200 --local_epochs 1 \
 
 For fedadam :
 ```bash
-CUDA_VISIBLE_DEVICES=0 python main.py --communications 200 --local_epochs 1 \
+python main.py --communications 200 --local_epochs 1 \
     --model_type "resnet" --learning_rate 0.001 --algorithm "fedadam" --seed 0 \
     --server_learning_rate 0.01 --tau 0.01 \
     --load_dir "/home/edlab/sjyang/temp/data_storage/federated_ecg_manifest"  
@@ -85,7 +85,7 @@ python main.py --communications 200 --local_epochs 1 \
 
 For fedadam :
 ```bash
-CUDA_VISIBLE_DEVICES=0 python main.py --communications 200 --local_epochs 1 \
+python main.py --communications 200 --local_epochs 1 \
     --model_type "resnet" --learning_rate 0.001 --algorithm "fedadam" --seed 0 \
     --server_learning_rate 0.01 --tau 0.01 \
     --load_dir "/home/edlab/sjyang/temp/data_storage/federated_ecg_manifest" --test
