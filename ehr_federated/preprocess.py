@@ -3,6 +3,13 @@ from torch.utils.data import DataLoader, Dataset, RandomSampler, SubsetRandomSam
 from typing import Dict
 from pathlib import Path
 
+def add_fit_args(parser):
+    parser.add_argument('--data_path', type=str, default='data_storage', help="Data path")
+    args = parser.parse_args()
+    return args
+
+args = add_fit_args(argparse.ArgumentParser())
+
 def depickle(filepath):
     with open(filepath, mode='rb') as f: return pickle.load(f)
 
@@ -157,8 +164,7 @@ class PatientDataset(Dataset):
 
         self.train_tune_test='train'
         self.epoch=0
-        self.save_path = "/home/data_storage/eicu-2.0/federated_preprocessed_data/cached_data"
-        # self.save_path = "/home/data_storage/eicu-2.0/federated_preprocessed_sanity_check/cached_data"
+        self.save_path = f"{args.data_path}/eicu-2.0/federated_preprocessed_data/cached_data"
         path = Path(self.save_path)
         path.mkdir(parents=True, exist_ok=True)
 
@@ -383,14 +389,7 @@ def load_data():
     return hospital_stay_id_map, unitstay_list
 
 
-def add_fit_args(parser):
-    parser.add_argument('--data_path', type=str, default='data_storage', help="Data path")
-    args = parser.parse_args()
-    return args
-
 if __name__ == "__main__" :
-
-    args = add_fit_args(argparse.ArgumentParser())
 
     directory_path = f"{args.data_path}/eicu-2.0/federated_preprocessed_data/final_datasets_for_sharing/dataset_eicu/rotations/no_notes"
     print('START CACHING...')
