@@ -1,5 +1,10 @@
 # Towards the Practical Utility of Federated Learning in the Medical Domain
 
+**Seongjun Yang<sup>1</sup>, Hyeonji Hwang<sup>1</sup>, Daeyoung Kim<sup>1</sup>, Radhika Dua<sup>1</sup>, Jong-Yeup Kim<sup>2</sup>, Eunho Yang<sup>1</sup>, Edward Choi<sup>1</sup>**
+
+**<sup>1</sup>KAIST, <sup>2</sup>Department of Biomedical Informatics, College of Medicine, Konyang University
+
+
 This repository is official implementation of "Towards the Practical Utility of Federated Learning in the Medical Domain". Federated learning (FL) is an active area of research. One of the most suitable areas for adopting FL is the medical domain, where patient privacy must be respected. we propose empirical benchmarks of FL methods with three real-world datasets: electronic health records, skin cancer images, and electrocardiogram datasets.
 
   
