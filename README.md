@@ -30,3 +30,5 @@ We attach the PRAUC results of FL methods with the eICU in the [experiment_resul
 # Contact
 If you have any question or recommendation, please contact us via an issue or an e-mail.
 * seongjunyang@kaist.ac.kr
+* localh@kaist.ac.kr
+* daeyoung.k@kaist.ac.kr
