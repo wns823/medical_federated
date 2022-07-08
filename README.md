@@ -4,7 +4,7 @@
 
 **<sup>1</sup>KAIST, <sup>2</sup>Department of Biomedical Informatics, College of Medicine, Konyang University**
 
-This repository is official implementation of "Towards the Practical Utility of Federated Learning in the Medical Domain".
+This repository is official implementation of "Towards the Practical Utility of Federated Learning in the Medical Domain" ([link](https://arxiv.org/pdf/2207.03075.pdf)).
 
 ## Abstract
 Federated learning (FL) is an active area of research. One of the most suitable areas for adopting FL is the medical domain, where patient privacy must be respected. Previous research, however, does not fully consider who will most likely use FL in the medical domain. It is not the hospitals who are eager to adopt FL, but the service providers such as IT companies who want to develop machine learning models with real patient records. Moreover, service
