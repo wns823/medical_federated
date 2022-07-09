@@ -25,6 +25,8 @@ $ mkdir [your specific path]/data_storage && cd [your specific path]/data_storag
 ```bash
 $ wget https://isic-challenge-data.s3.amazonaws.com/2019/ISIC_2019_Training_Input.zip
 $ wget https://isic-challenge-data.s3.amazonaws.com/2019/ISIC_2019_Training_GroundTruth.csv
+$ wget https://isic-challenge-data.s3.amazonaws.com/2019/ISIC_2019_Training_Metadata.csv
+$ bash scripts/ISIC19.sh [data_storage_path]
 ```
 
 - Download the HAM10000 dataset from [link](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T) in the data_storage folder

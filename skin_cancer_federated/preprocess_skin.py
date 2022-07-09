@@ -22,11 +22,11 @@ if __name__ == "__main__" :
     HAM_df = pd.read_csv(HAM_csv_path)
 
     # Delete duplicate images in ISIC-19
-    mkl_images = np.load("mkl.npy")
-    ham_id = list(HAM_df['image_id'])
-    core_2019 = ISIC_df[~ISIC_df['image'].isin(ham_id)]
-    core_2019 = core_2019[~core_2019['image'].isin(mkl_images)]
+    ISIC_meta = pd.read_csv(os.path.join( ISIC_2019_path, "ISIC_2019_Training_Metadata.csv"))
+    barcelona_list = [ i for i in ISIC_meta['lesion_id'].dropna() if 'BCN' in i ]
+    barcelona_core = ISIC_meta[ISIC_meta['lesion_id'].isin(barcelona_list)]
 
+    core_2019 = ISIC_df[ISIC_df['image'].isin(barcelona_core['image'])]
     core_2019.to_csv(os.path.join( ISIC_2019_path, "ISIC_2019_core.csv") , mode='w')
 
     # Split ronsendahl and vienna in HAM10000
