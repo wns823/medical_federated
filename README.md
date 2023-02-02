@@ -22,10 +22,4 @@ You can see the details of FL with ECG [here](ecg_federated/README.md).
 We have attached all details of the experiments in the [experiment_detail](experiment_detail/README.md).
 
 ## More experiment results
-We attach the PRAUC results of FL methods with the eICU in the [experiment_results](experiment_results/README.md). 
-
-# Contact
-If you have any question or recommendation, please contact us via an issue or an e-mail.
-* seongjunyang@kaist.ac.kr
-* localh@kaist.ac.kr
-* daeyoung.k@kaist.ac.kr
+We attach the PRAUC results of FL methods with the eICU in the [experiment_results](experiment_results/README.md).
