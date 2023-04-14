@@ -1,7 +1,7 @@
 # Towards the Practical Utility of Federated Learning in the Medical Domain (CHIL 23)
 
 
-**Seongjun Yang*<sup>1</sup>, Hyeonji Hwang*<sup>2</sup>, Daeyoung Kim<sup>3</sup>, Radhika Dua<sup>2</sup>, Jong-Yeup Kim<sup>4</sup>, Eunho Yang<sup>2</sup>, Edward Choi<sup>2</sup> ** | [Paper](https://arxiv.org/abs/2207.03075)
+**Seongjun Yang<sup>1</sup><sup>*</sup>, Hyeonji Hwang<sup>2</sup><sup>*</sup>, Daeyoung Kim<sup>3</sup>, Radhika Dua<sup>2</sup>, Jong-Yeup Kim<sup>4</sup>, Eunho Yang<sup>2</sup>, Edward Choi<sup>2</sup> ** | [Paper](https://arxiv.org/abs/2207.03075)
 
 **<sup>1</sup>KRAFTON, <sup>2</sup>KAIST AI, <sup>3</sup>NCSOFT, <sup>4</sup>College of Medicine, Konyang University**
 
